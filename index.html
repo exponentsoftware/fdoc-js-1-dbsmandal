@@ -1,0 +1,40 @@
+<html>
+<body>
+   <h2> Use <i> for loop </i>to print a triangle formed of '#' </h2>
+   <div id = "div1"></div>
+   <script>
+      var i;
+      var j;
+      for (i=0 ; i<7 ; i++){
+         for (j=0 ; j<=i ; j++){
+            var span= document.createElement("span");
+            var spanText=document.createTextNode(' #');
+            span.appendChild(spanText);
+            document.getElementById("div1").appendChild(span);
+         }
+         var para= document.createElement("p");
+         var paraText=document.createTextNode("");
+         para.appendChild(paraText);
+         document.getElementById("div1").appendChild(para);
+      }
+
+    function triangle(symble){
+    var line = "";
+
+    var i;
+    var j;
+    for (i=0; i< symble; i++) {
+        for (j=0; j<=i; j++) {
+           line +="#"
+        }
+        line+="\n";
+
+     }
+     return line + "\n";
+
+}
+
+console.log(triangle(7))
+   </script>
+</body>
+</html>
