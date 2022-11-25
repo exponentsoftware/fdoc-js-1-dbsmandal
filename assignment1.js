@@ -119,11 +119,8 @@ console.log(reverseArray(["A", "B", "C"]));
 
 
 const checkUniqueness = (array) => {
-  let myArray = Array.from(new Set(array))
-  // console.log("myArray length", myArray.length)
-  // console.log("array length", array.length)
-  // console.log("3", myArray)
-  // console.log("4", array)
+  let myArray = Array.from(new Set(array))//filter duplicate values in array and create new array called myArray
+  
   if (array.length == myArray.length) {
     return true
     // return true || myArray
@@ -143,3 +140,7 @@ console.log("arrThree",checkUniqueness(arrThree));
 
 const arrFour = ["dipak","goutam","sampa","goutam"]
 console.log("arrFour",checkUniqueness(arrFour));
+
+
+const arrFive = ["dipak","goutam","sampa","subhankar"]
+console.log("arrFive",checkUniqueness(arrFive));
