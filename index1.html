@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    const checkUniqueness = (array) => {
+  let myArray = Array.from(new Set(array))
+  console.log("myArray length",myArray.length)
+  console.log("array length",array.length)
+  console.log("3",myArray)
+  console.log("4",array)
+  if (array.length == myArray.length) {
+    return false
+  }else{
+    return true
+  }
+  return myArray
+}
+const arrOne = [1, 4, 6, 2, 1,2];
+console.log(checkUniqueness(arrOne));
+
+const arrTwo = [1, 4, 6, 2, 3]
+console.log(checkUniqueness(arrTwo));
+
+</script>
+<body>
+    
+</body>
+</html>
