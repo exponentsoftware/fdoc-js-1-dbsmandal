@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Word </title>
+    <script>
+        const paragraph = 'I love teaching. If you do not love teaching what else can you love. I love JavaScript if you do not love something which can give life to your application what else can you love.';
+
+        const countWords=(paragraph)=>{
+
+            const arr=paragraph.split("");
+            return arr.filter(word=>word !=="").length
+
+        }
+        console.log(countWords(paragraph,'love', 'you'));
+
+
+    </script>
+</head>
+<body>
+    <h1>Count Word </h1>
+    <p>I love teaching. If you do not love teaching what else can you love. I love JavaScript if you do not love something which can give life to your application what else can you love.</p><br>
+    <button >Word Count</button>
+   
+    <br>
+
+
+</body>
+</html>
